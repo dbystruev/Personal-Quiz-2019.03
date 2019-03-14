@@ -12,6 +12,10 @@
 		695FD09E223AC78800999813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 695FD09C223AC78800999813 /* Main.storyboard */; };
 		695FD0A0223AC78E00999813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 695FD09F223AC78E00999813 /* Assets.xcassets */; };
 		695FD0A3223AC78E00999813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 695FD0A1223AC78E00999813 /* LaunchScreen.storyboard */; };
+		695FD0AB223ACD0100999813 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695FD0AA223ACD0100999813 /* QuestionViewController.swift */; };
+		695FD0AD223ACD1700999813 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695FD0AC223ACD1700999813 /* ResultsViewController.swift */; };
+		695FD0B1223AD5E500999813 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695FD0B0223AD5E500999813 /* Question.swift */; };
+		695FD0B3223AD66600999813 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695FD0B2223AD66500999813 /* Answer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		695FD09F223AC78E00999813 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		695FD0A2223AC78E00999813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		695FD0A4223AC78E00999813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		695FD0AA223ACD0100999813 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		695FD0AC223ACD1700999813 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		695FD0B0223AD5E500999813 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		695FD0B2223AD66500999813 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,34 @@
 		695FD097223AC78800999813 /* Personal Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				695FD0AF223AD5B700999813 /* Model */,
 				695FD098223AC78800999813 /* AppDelegate.swift */,
-				695FD09A223AC78800999813 /* ViewController.swift */,
+				695FD0AE223ACD2000999813 /* View Controllers */,
 				695FD09C223AC78800999813 /* Main.storyboard */,
 				695FD09F223AC78E00999813 /* Assets.xcassets */,
 				695FD0A1223AC78E00999813 /* LaunchScreen.storyboard */,
 				695FD0A4223AC78E00999813 /* Info.plist */,
 			);
 			path = "Personal Quiz";
+			sourceTree = "<group>";
+		};
+		695FD0AE223ACD2000999813 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				695FD09A223AC78800999813 /* ViewController.swift */,
+				695FD0AA223ACD0100999813 /* QuestionViewController.swift */,
+				695FD0AC223ACD1700999813 /* ResultsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		695FD0AF223AD5B700999813 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				695FD0B2223AD66500999813 /* Answer.swift */,
+				695FD0B0223AD5E500999813 /* Question.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				695FD0B1223AD5E500999813 /* Question.swift in Sources */,
 				695FD09B223AC78800999813 /* ViewController.swift in Sources */,
 				695FD099223AC78800999813 /* AppDelegate.swift in Sources */,
+				695FD0B3223AD66600999813 /* Answer.swift in Sources */,
+				695FD0AB223ACD0100999813 /* QuestionViewController.swift in Sources */,
+				695FD0AD223ACD1700999813 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

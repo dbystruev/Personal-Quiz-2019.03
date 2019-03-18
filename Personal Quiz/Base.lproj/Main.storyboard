@@ -187,13 +187,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Hb7-ID-ht1">
                                         <rect key="frame" x="0.0" y="50" width="528" height="20.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaa-ZK-YyU">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaa-ZK-YyU">
                                                 <rect key="frame" x="0.0" y="0.0" width="264" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2d-tH-ebK">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2d-tH-ebK">
                                                 <rect key="frame" x="264" y="0.0" width="264" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -240,8 +240,19 @@
                     <navigationItem key="navigationItem" id="NJ0-1m-ZgX"/>
                     <connections>
                         <outlet property="multipleStackView" destination="N5W-84-UTj" id="86q-KC-0xL"/>
+                        <outlet property="questionProgressView" destination="D0V-qE-1qv" id="0Bw-zE-8Dm"/>
                         <outlet property="rangedStackView" destination="9Og-iX-kyC" id="TRg-Qw-k9E"/>
                         <outlet property="singleStackView" destination="5qw-Pr-lIa" id="lLr-id-gXZ"/>
+                        <outletCollection property="singleButtons" destination="1vO-hJ-RRz" collectionClass="NSMutableArray" id="me8-Wz-HyH"/>
+                        <outletCollection property="singleButtons" destination="eBY-fB-g0Z" collectionClass="NSMutableArray" id="hQ8-vL-mWj"/>
+                        <outletCollection property="singleButtons" destination="oKW-VI-1lM" collectionClass="NSMutableArray" id="bHf-JV-xcq"/>
+                        <outletCollection property="singleButtons" destination="Hc5-gt-m7o" collectionClass="NSMutableArray" id="yTg-Uw-XxX"/>
+                        <outletCollection property="multiLabels" destination="4k7-Uk-aRb" collectionClass="NSMutableArray" id="dgY-eG-oZ0"/>
+                        <outletCollection property="multiLabels" destination="hiQ-q9-1EX" collectionClass="NSMutableArray" id="Q0w-dV-HZd"/>
+                        <outletCollection property="multiLabels" destination="FhQ-9z-AHg" collectionClass="NSMutableArray" id="Oac-HJ-89G"/>
+                        <outletCollection property="multiLabels" destination="45b-Za-4p5" collectionClass="NSMutableArray" id="5hq-oM-QWl"/>
+                        <outletCollection property="rangedLabels" destination="jaa-ZK-YyU" collectionClass="NSMutableArray" id="eJG-u4-Jyk"/>
+                        <outletCollection property="rangedLabels" destination="g2d-tH-ebK" collectionClass="NSMutableArray" id="uiL-gb-Dpw"/>
                         <segue destination="nsX-3a-e6W" kind="show" identifier="ResultsSegue" id="Wgw-41-D8z"/>
                     </connections>
                 </viewController>

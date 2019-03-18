@@ -11,6 +11,11 @@ struct Question {
     var type: ResponceType
     var answers: [Answer]
     
+    static func loadData(completion: @escaping ([Question]?) -> Void) {
+//        let questions = loadData()
+        completion(nil)
+    }
+    
     static func loadData() -> [Question] {
         return [
             Question(
